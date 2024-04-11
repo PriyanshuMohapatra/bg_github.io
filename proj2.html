@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Website</title>
+    <style>
+        /* Your CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .cake {
+            margin: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 250px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .cake:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cake img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .cake-info {
+            margin-top: 10px;
+        }
+
+        .cake-info h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .cake-info p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://assets.winni.in/product/primary/2023/4/84499.jpeg?dpr=1&w=1000" alt="Cake 1">
+            <div class="cake-info">
+                <h3>Chocolate Cake</h3>
+                <p>250rs</p>
+            </div>
+        </div>
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://www.engineerscakeandcafe.in/wp-content/uploads/2023/04/vanilla.jpg" alt="Cake 2">
+            <div class="cake-info">
+                <h3>Vannila</h3>
+                <p>250rs</p>
+            </div>
+        </div>
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://assets.winni.in/product/primary/2022/9/73538.jpeg?dpr=1&w=500" alt="Cake 3">
+            <div class="cake-info">
+                <h3>Strawberry</h3>
+                <p>300rs</p>
+            </div>
+        </div>
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsDPv-w7JB36LbML8SVOYu9CnLr0QGJUgU3Z97sDhNQ&s" alt="Cake 4">
+            <div class="cake-info">
+                <h3>Redvelvet</h3>
+                <p>350rs</p>
+            </div>
+        </div>
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88qaebYr2idMO3_29nMj26ue3Xa4rAAVJ_PfwqwxT3w&s" alt="Cake 5">
+            <div class="cake-info">
+                <h3>Pineapple</h3>
+                <p>240rs</p>
+            </div>
+        </div>
+        <div class="cake" onclick="redirectToWebsite('work2')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtR5POzLHMWaNtpz-uOQKzFrIn7yuAvBamnWUB76agg&s" alt="Cake 6">
+            <div class="cake-info">
+                <h3>LemonCake</h3>
+                <p>245rs</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToWebsite(page) {
+            window.location.href = '/' + page + '.html';
+        }
+    </script>
+</body>
+</html>
