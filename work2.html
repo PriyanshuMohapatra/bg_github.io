@@ -55,8 +55,9 @@ form button {
             Sendername
             <input type="text" value="Bangalore Bakery" disabled id="sendername" placeholder="Your name" required>
             <input type="email" id="to" placeholder="Your email" required>
-            <input type="text" id="message" placeholder="Preferences: veg/nonveg, size, etc..">
-            <textarea id="subject" rows="4" placeholder="Your experience"></textarea>
+            <input type="text" id="message" placeholder="Preferences: egg/eggless, size,flavour etc..">
+            
+            <h2>Thank you for visiting us!!</h2>
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -70,8 +71,8 @@ form button {
           var params={
             sendername:document.querySelector("#sendername").value,
             to:document.querySelector("#to").value,
-            subject:document.querySelector("#message").value,
-            message:document.querySelector("#subject").value,
+            subject:document.value = "Confirmation mail",
+            message:document.querySelector("#message").value="Order onfirmed Thank you!",
           };
           var service="service_l2etrda";
           var template="template_94u827q";
